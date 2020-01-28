@@ -33,13 +33,14 @@ class Bubble {
 
   void display() {
     //stroke(0);
-    map(mag, 0, 9, 1, 20);
+    float tmag = map(mag, 0, 9, 2, 20);
     fill(c);
-    circle(x, y, mag);
+    circle(x, y, tmag);
     if (over) {
+      
       fill(0);
       textAlign(CENTER);
-      text(name, x, y + mag/2+20);
+      text(name, x, y + tmag/2+20);
     }
   }
 }

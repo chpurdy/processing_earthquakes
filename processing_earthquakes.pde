@@ -39,7 +39,7 @@ void loadData() {
 
 
 void draw() {
-
+  background(worldImg);
   for (Bubble b : bubbles) {
     b.rollover(mouseX, mouseY);
     b.display();
